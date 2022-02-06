@@ -21,14 +21,10 @@ class Solution
         int n = Convert.ToInt32(Console.ReadLine().Trim());
 
         List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
-        ReversePrint(arr);
-    }
 
-    private static void ReversePrint(List<int> arr)
-    {
-        int length = arr.Count;
+        int x = arr.Count;
 
-        for (int i = length - 1; i >= 0; i--)
+        for (int i = x - 1; i >= 0; i--)
         {
             if (i > 0)
             {
@@ -39,6 +35,5 @@ class Solution
                 Console.Write(arr[i]);
             }
         }
-
     }
 }

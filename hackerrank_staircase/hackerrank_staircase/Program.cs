@@ -19,7 +19,8 @@ namespace hackerrank_staircase
                     Console.Write("#");
                 }
                 Console.WriteLine();
-            }                                   
+            }
+            Console.ReadKey();
         }
     }
 }
